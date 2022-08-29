@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ConstraintLayout bgElement = (ConstraintLayout) findViewById(R.id.activity_main);
+        bgElement.setBackgroundColor(Color.RED);
         myButtonListenerMethod();
     }
 
@@ -29,12 +31,15 @@ public class MainActivity extends AppCompatActivity {
                 int color = ((ColorDrawable) bgElement.getBackground()).getColor();
                 if (color == Color.BLUE) {
                     bgElement.setBackgroundColor(Color.RED);
+                    button.setText("AZUL");
+                    button.setTextColor(Color.BLUE);
                 } else {
                     bgElement.setBackgroundColor(Color.BLUE);
+                    button.setText("VERMELHO");
+                    button.setTextColor(Color.RED);
                 }
             }
         });
     }
-
 
 }
