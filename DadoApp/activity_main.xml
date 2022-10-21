@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogue um dado de 6!"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+
+    <ImageView
+        android:id="@+id/imagemDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dado"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/botaoRolarDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rodar!"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <TextView
+        android:id="@+id/resultadoDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <SeekBar
+        android:id="@+id/slide"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <Button
+        android:id="@+id/showImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Imagem"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
